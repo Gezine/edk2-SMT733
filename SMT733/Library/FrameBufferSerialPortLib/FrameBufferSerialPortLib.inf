@@ -1,0 +1,28 @@
+[Defines]
+  INF_VERSION    = 0x00010005
+  BASE_NAME      = FrameBufferSerialPortLib
+  MODULE_TYPE    = BASE
+  VERSION_STRING = 1.0
+  LIBRARY_CLASS  = SerialPortLib
+
+[Sources.common]
+  FrameBufferSerialPortLib.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  ArmPkg/ArmPkg.dec
+  SMT733/SMT733.dec
+
+[LibraryClasses]
+  ArmLib
+  PcdLib
+  IoLib
+  HobLib
+  CompilerIntrinsicsLib
+  CacheMaintenanceLib
+
+[Pcd]
+  gSMT733TokenSpaceGuid.PcdMipiFrameBufferAddress
+  gSMT733TokenSpaceGuid.PcdMipiFrameBufferWidth
+  gSMT733TokenSpaceGuid.PcdMipiFrameBufferHeight
+  gSMT733TokenSpaceGuid.PcdMipiFrameBufferPixelBpp
