@@ -6,8 +6,9 @@ Based on map220v's commits for Galaxy A72 - https://github.com/map220v/edk2-a72q
 
 Display
 
-Boot to EFI shell
+Boots to EFI shell
 
+![EFI shell](efishell.jpg)
 
 ## Not Working
 
